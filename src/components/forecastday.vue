@@ -3,8 +3,8 @@
     <div> {{ this.getForecastDayOfWeek() }}</div>
     <img v-bind:src="this.getForecastIconUrl()"/>
     <div>
-      <span>{{ this.getForecastMax() }}°C</span>
-      <span>{{ this.getForecastMin() }}°C</span>
+      <span class="max">{{ this.getForecastMax() }}°C</span>
+      <span class="min">{{ this.getForecastMin() }}°C</span>
     </div>
   </div>
 
@@ -37,12 +37,20 @@
   img {
     width: 50px;
     height: 50px;
+    background-color: #EEEEEE;
+    border-radius: 100%;
   }
 
   .forecastday {
-    background-color: #EEEEEE;
     padding: 20px;
-    border-radius: 10px;
+  }
+
+  .max {
+    color:white;
+  }
+
+  .min {
+    color:#22222
   }
 
 </style>

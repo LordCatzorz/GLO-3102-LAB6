@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Weather.js</h1>
+    <h1>
+      <span>Weather.js</span>
+    </h1>
     <span>{{ this.extractLocation() }}</span>
   </div>
 </template>
