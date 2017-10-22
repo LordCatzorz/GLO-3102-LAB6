@@ -14,7 +14,7 @@
     components: {forecastday},
     methods: {
       getForecastArray() {
-        return this.completeforecast.slice(0,5);
+        return this.completeforecast.slice(0,7);
       }
     }
   }
