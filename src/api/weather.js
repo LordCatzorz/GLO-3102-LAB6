@@ -10,7 +10,7 @@ function GetLocalisationAddress() {
 }
 
 function GetForecastAddress(location) {
-  return `${apiAddress}${apiKey}/forecast/q/${location.state}/${location.city}.json`;
+  return `${apiAddress}${apiKey}/forecast10day/q/${location.state}/${location.city}.json`;
 }
 
 export function GetLocationASync() {
@@ -49,3 +49,4 @@ export function GetForecastASync(location) {
   })
 }
 
+6
